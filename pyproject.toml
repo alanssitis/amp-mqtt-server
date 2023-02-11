@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amp_mqtt_server"
+version = "0.0.1"
+authors = [
+    { name = "Alan Chung Ma", email = "achungma@purdue.edu" },
+]
+description = "AMP mqtt server prototype"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "paho-mqtt",
+]
+
+[project.scripts]
+amp-mqtt-server = "amp_mqtt_server:main"
